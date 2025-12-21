@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/riamlogo.jpg" type="image/x-icon">
+    <title>Riam Stitches & Fashion - Welcome to Home of Fashion, let's style it for you</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Momo+Signature&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 600vh;
+            /* background-color: #FFF8F2; */
+            font-family: "Lora", serif;
+            color: #FFF5E1;
+        }
+        .navbar{
+            background-color: #FFF5E1;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        /* end of nav  */
+        .hero{
+            width: 100%;
+            height: 80vh;
+            background-image: linear-gradient(45deg,#8000207a, rgba(0, 0, 0, 0.575)), url(Images/1a6a8e1038b3920b58f4c620daa154cc.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            
+        }
+        .heroh1{
+             font-family: "Momo Signature", cursive;
+             color:#FFF5E1;
+             text-align: center;
+             font-size: 60px;
+        }
+        .herobtn{
+            border: 1px solid #FFF5E1;
+            padding: 10px 30px;
+            color: #FFF5E1;
+            margin-top: 50px;
+            width: fit-content;
+        }
+
+        .offerImg{
+            width: 300px;
+            height: 400px;
+        }
+
+        .chooseCard{
+            width: 300px;
+            height: 300px;
+            background-color: #FFF5E1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .collectionCard{
+            position: relative;
+            overflow: hidden;
+        }
+        .collectionCard::before{
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 120%;
+            background: linear-gradient(180deg, #800020, #FFF5E1);
+            animation: rotate 3s linear infinite;
+            z-index: -10;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .collectionCard::after{
+            content: "";
+            position: absolute;
+            inset:5px;
+            background: #FFF5E1;
+            border-radius: 15px;
+            z-index: -10;
+        }
+        .btnline{
+            position: relative;
+            background-color: #FFF5E1;
+        }
+        .line{
+            position: absolute;
+            bottom: 10;
+            left: -60 ;
+            width: 300px;
+            height: 10px;
+            background-color: #800020;
+            z-index: -10;
+        }
+        @media (max-width:991px) {
+            .offerImg{
+                width: 250px;
+                height: 350px;
+            }
+            .chooseCards, .collectionCards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between px-5 pt-3 rounded-2" >
+            <div class="container">
+                <div class="d-flex align-items-center">
+                <a href="" class="navbar-brand"><img src="Images/riamlogo.jpg" alt="" width="40px" class="rounded-circle"> RIAM</a>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+                <img src="icons/tdesign--menu-unfold.svg" alt="" width="30px">
+                </button>          
+                <div class="collapse navbar-collapse" id="navbarLinks">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+    </nav>
+    
+    <!-- hero section  -->
+   <section class="hero d-flex justify-content-center align-items-center ">
+    <div>
+        <h1 class="heroh1">Riam Stitches & Fashion</h1>
+    <p class="fs-2 text-center">Made to fit, made to shine</p>
+    <a class="btn herobtn d-block mx-auto">Shop with Us <img src="icons/tdesign--cart-filled.svg" alt=""></a>
+    </div>
+   </section>
+
+
+<!-- what we offer   -->
+ <section class="offer">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Our Specialty</h1>
+   <section class="d-flex gap-4 align-items-center ms-4"  style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; scrollbar-width: none; -ms-overflow-style: none;">
+    
+    <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+    </div>
+    
+   </section>
+ </section>
+
+ <!-- choose us  -->
+  <section class="choose">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Why Choose us</h1>
+    <section class="d-lg-flex justify-content-center gap-5 chooseCards">
+        <div class="chooseCard rounded-4">
+            <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="" width="40px" class="">
+            <h3 style="color: #800020; padding-top: 20px;">Perfect Fitting</h3>
+            <p style="color: #800020; text-align: center;">A perfect fit that enhances your appearance, boosts confidence, and makes the outfit feel natural specifically make for you.</p>
+        </div>
+         <div class="chooseCard rounded-4">
+            <img src="icons/streamline-cyber--delivery-package-2.svg" alt="" width="40px" class="">
+            <h3 style="color: #800020; padding-top: 20px;">Fast Delivery</h3>
+            <p style="color: #800020; text-align: center;">Your order reaches you promptly, in perfect condition, without unnecessary delays. Right on time, every time.</p>
+        </div>
+         <div class="chooseCard rounded-4">
+            <img src="icons/game-icons--rolled-cloth.svg" alt="" width="40px" class="">
+            <h3 style="color: #800020; padding-top: 20px;">Quality Fabrics</h3>
+            <p style="color: #800020; text-align: center;">Durable, well-crafted materials that feel comfortable on the skin and perfect for your style. Premium Fabrics, lasting comfort</p>
+        </div>
+    </section>
+  </section>
+
+  <!-- collections  -->
+<section class="collection px-5">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Our Collections</h1>
+    <section class="d-lg-flex gap-4 collectionCards">
+        <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
+            <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Bolanle set</h6>
+            <p style="color: #800020;">#12,000</p>
+            <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
+        </div>
+       
+        <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
+            <img src="Images/1a6a8e1038b3920b58f4c620daa154cc.jpg" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Bolanle set</h6>
+            <p style="color: #800020;">#12,000</p>
+            <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
+        </div>
+        <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
+            <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Bolanle set</h6>
+            <p style="color: #800020;">#12,000</p>
+            <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
+        </div>
+        <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
+            <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Bolanle set</h6>
+            <p style="color: #800020;">#12,000</p>
+            <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
+        </div>
+    </section>
+     <div class="d-flex  justify-content-center pt-5 ">
+        <a href="" class="btn fw-medium mb-3 btnline" style="border:1px solid #800020; color: #800020; font-size: 12px;">VIEW MORE COLLECTIONS
+            <div class="line "></div>
+        </a>
+     </div>
+  </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
