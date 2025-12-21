@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Momo+Signature&display=swap" rel="stylesheet">
     <style>
         body{
-            height: 600vh;
+            /* height: 600vh; */
             /* background-color: #FFF8F2; */
             font-family: "Lora", serif;
             color: #FFF5E1;
@@ -104,15 +104,37 @@
             background-color: #800020;
             z-index: -10;
         }
+        .contactCard{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            text-align: center;
+            padding-top: 90px; 
+        }
+        footer{
+            margin-top: 20px;
+            background-color: #800020;
+            color: #FFF5E1;
+            width: 100%;
+            /* height: 60vh; */
+        }
+        footer a{
+            text-decoration: none;
+            color: #FFF5E1;
+        }
         @media (max-width:991px) {
             .offerImg{
                 width: 250px;
                 height: 350px;
             }
-            .chooseCards, .collectionCards{
+            .chooseCards, .collectionCards, .contact{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+            .foot{
+                display: flex;
+                flex-direction: column; 
             }
         }
     </style>
@@ -133,10 +155,10 @@
                             <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Shop</a>
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Specialty</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Gallery</a>
+                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Collections</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Contact</a>
@@ -251,7 +273,94 @@
         </a>
      </div>
   </section>
+ <!-- what our customer says  -->
+  <section class="collection px-5">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">What Our Customers say</h1>
+    <section class="d-lg-flex gap-4 collectionCards">
+        <div class="collectionCard d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
+            <blockquote style="color: #800020;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
+            </blockquote>
+           <div class="d-flex justify-content-between"> 
+            <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="30px">
+            <span style="color: #800020;">Addeola</span>
+          </div>
+        </div>
+        <div class="collectionCard d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
+            <blockquote style="color: #800020;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
+            </blockquote>
+           <div class="d-flex justify-content-between"> 
+            <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="30px">
+            <span style="color: #800020;">Addeola</span>
+          </div>
+        </div>
+        <div class="collectionCard d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
+            <blockquote style="color: #800020;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
+            </blockquote>
+           <div class="d-flex justify-content-between"> 
+            <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="30px">
+            <span style="color: #800020;">Addeola</span>
+          </div>
+        </div>
+       
+       
+        
+    </section>
+   
+  </section>
 
+  <!-- Contact -->
+   <section class="px-5 py-4">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Contact us</h1>
+   <section class=" d-lg-flex justify-content-center gap-4 contact">
+     <div class="contactCard" style="background-color: #800020; color: #FFF5E1; border-radius: 50px 0px ;">
+        <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="">
+        <p>Call/Message Us </p>
+        <p>+234 906 698 2861</p>
+        <p>Available 24/7</p>
+     </div>
+     <div class="contactCard" style="background-color: #FFF5E1; color: #800020;">
+        <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="">
+        <p>Visit Us </p>
+        <p>Behind Recreation Center</p>
+        <p>Ogbomoso, Oyo State.</p>
+     </div>
+     <div class="contactCard" style="background-color: #800020; color: #FFF5E1; border-radius: 0px 50px ;">
+        <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="">
+        <p>Open Hours </p>
+        <p>8AM- 10PM</p>
+        <p>Mon - Sun</p>
+     </div>
+   </section>
+   </section>
+
+   <footer>
+    <div class="d-flex justify-content-between p-5 foot">
+        <div class="d-flex align-items-center" style="flex-direction: column;">
+        <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="60px" >
+        <h1>Riam Stitches & Fashion</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, delectus! lore</p>
+    </div>
+    <div class="d-flex gap-3" style="flex-direction: column;">
+        <h3>Quick Links</h3>
+        <a href="">Home</a>
+        <a href="">Collections</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+    <div>
+        <h3>Connect With Us</h3>
+        <a href=""><img src="icons/game-icons--rolled-cloth.svg" alt=""></a>
+        <a href=""><img src="icons/game-icons--rolled-cloth.svg" alt=""></a>
+        <a href=""><img src="icons/game-icons--rolled-cloth.svg" alt=""></a>
+        <a href=""><img src="icons/game-icons--rolled-cloth.svg" alt=""></a>
+    </div>
+    </div>
+    <hr>
+    <p class="text-center pb-3">&copy; 2025 RIAM STITCHES & FASHION. All Rights Reserved.</p>
+   </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
