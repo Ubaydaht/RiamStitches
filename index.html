@@ -111,6 +111,9 @@
             text-align: center;
             padding-top: 90px; 
         }
+        .contactCard:hover{
+            transform: translate(5px);
+        }
         footer{
             margin-top: 20px;
             background-color: #800020;
@@ -122,7 +125,7 @@
             text-decoration: none;
             color: #FFF5E1;
         }
-        @media (max-width:991px) {
+        @media (max-width:767px) {
             .offerImg{
                 width: 250px;
                 height: 350px;
@@ -137,6 +140,7 @@
                 flex-direction: column; 
             }
         }
+       
     </style>
     
 </head>
@@ -218,7 +222,7 @@
  <!-- choose us  -->
   <section class="choose">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Why Choose us</h1>
-    <section class="d-lg-flex justify-content-center gap-5 chooseCards">
+    <section class="d-md-flex justify-content-center gap-5 chooseCards">
         <div class="chooseCard rounded-4">
             <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="" width="40px" class="">
             <h3 style="color: #800020; padding-top: 20px;">Perfect Fitting</h3>
@@ -240,7 +244,7 @@
   <!-- collections  -->
 <section class="collection px-5">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Our Collections</h1>
-    <section class="d-lg-flex gap-4 collectionCards">
+    <section class="d-md-flex gap-4 collectionCards">
         <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
             <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="300px" height="300px" class="">
             <h6 style="color: #800020; ">Bolanle set</h6>
@@ -274,19 +278,19 @@
      </div>
   </section>
  <!-- what our customer says  -->
-  <section class="collection px-5">
+  <!-- <section class="customer px-5">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">What Our Customers say</h1>
-    <section class="d-lg-flex gap-4 collectionCards">
-        <div class="collectionCard d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
+    <section class="d-md-flex gap-4 customerCards">
+        <div class="customerCard d-flex rounded-3 p-4" style="flex-direction: column; background-color: #FFF5E1;">
             <blockquote style="color: #800020;">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
             </blockquote>
            <div class="d-flex justify-content-between"> 
-            <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="30px">
-            <span style="color: #800020;">Addeola</span>
+            <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="30px" height="30px">
+            <span style="color: #800020;">Adeola</span>
           </div>
         </div>
-        <div class="collectionCard d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
+        <div class="customer d-flex align-items-center rounded-3" style="flex-direction: column; background-color: #FFF5E1;">
             <blockquote style="color: #800020;">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore placeat optio repellat id fuga eius labore quis et numquam!
             </blockquote>
@@ -309,12 +313,42 @@
         
     </section>
    
-  </section>
-
+  </section> -->
+ <section class="customer px-5">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">What Our Customers say</h1>
+    <section class=" customerCards">
+        <div id="carouselText" class="carousel slide carousel-fade w-75 mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                    <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="100%" style="height: 70vh;">
+                    <div class="carousel-caption" style="position: absolute; top: 100;">
+                        <p style="font-size: 20px; color: #800020;"><span style="font-size: 50px; color: #800020;">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum illo, aperiam impedit laborum, ut facere similique id totam voluptatibus, sequi ad adipisci distinctio. Asperiores quisquam  <span style="font-size: 50px; color: #800020;">&rdquo;</span></p>
+                        <span style="font-family: Momo Signature, cursive; font-size: 25px; padding-top: 50px; color: #FFF5E1; font-weight: bolder;">Adeola</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/71b175bae83ae45d38d9b7b105c59c78.jpg" alt="" width="100%" style="height: 70vh;">
+                    <div class="carousel-caption" style="position: absolute; top: 100;">
+                        <p style="font-size: 20px; color: #800020;"><span style="font-size: 50px; color: #800020;">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum illo, aperiam impedit laborum, ut facere similique id totam voluptatibus, sequi ad adipisci distinctio. Asperiores quisquam  <span style="font-size: 50px; color: #800020;">&rdquo;</span></p>
+                        <span style="font-family: Momo Signature, cursive; font-size: 25px; padding-top: 50px; color: #FFF5E1; font-weight: bolder;">Adeola</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="100%" style="height: 70vh;">
+                    <div class="carousel-caption" style="position: absolute; top: 100;">
+                        <p style="font-size: 20px; color: #800020;"><span style="font-size: 50px; color: #800020;">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum illo, aperiam impedit laborum, ut facere similique id totam voluptatibus, sequi ad adipisci distinctio. Asperiores quisquam  <span style="font-size: 50px; color: #800020;">&rdquo;</span></p>
+                        <span style="font-family: Momo Signature, cursive; font-size: 25px; padding-top: 50px; color: #FFF5E1; font-weight: bolder;">Adeola</span>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    </section>
+ </section>
   <!-- Contact -->
-   <section class="px-5 py-4">
+   <section class="px-5 my-4">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Contact us</h1>
-   <section class=" d-lg-flex justify-content-center gap-4 contact">
+   <section class=" d-md-flex justify-content-center gap-4 contact">
      <div class="contactCard" style="background-color: #800020; color: #FFF5E1; border-radius: 50px 0px ;">
         <img src="icons/fluent--clothes-hanger-16-filled.svg" alt="">
         <p>Call/Message Us </p>
