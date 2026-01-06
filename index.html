@@ -8,153 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Momo+Signature&display=swap" rel="stylesheet">
-    <style>
-        body{
-            /* height: 600vh; */
-            /* background-color: #FFF8F2; */
-            font-family: "Lora", serif;
-            color: #FFF5E1;
-        }
-        .navbar{
-            background-color: #FFF5E1;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        /* end of nav  */
-        .hero{
-            width: 100%;
-            height: 80vh;
-            background-image: linear-gradient(45deg,#8000207a, rgba(0, 0, 0, 0.575)), url(Images/1a6a8e1038b3920b58f4c620daa154cc.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-            
-        }
-        .heroh1{
-             font-family: "Momo Signature", cursive;
-             color:#FFF5E1;
-             text-align: center;
-             font-size: 60px;
-        }
-        .herobtn{
-            border: 1px solid #FFF5E1;
-            padding: 10px 30px;
-            color: #FFF5E1;
-            margin-top: 50px;
-            width: fit-content;
-        }
-
-        .offerImg{
-            width: 300px;
-            height: 400px;
-        }
-
-        .chooseCard{
-            width: 300px;
-            height: 300px;
-            background-color: #FFF5E1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 20px;
-        }
-        .collectionCard{
-            position: relative;
-            overflow: hidden;
-        }
-        .collectionCard::before{
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 120%;
-            background: linear-gradient(180deg, #800020, #FFF5E1);
-            animation: rotate 3s linear infinite;
-            z-index: -10;
-        }
-        @keyframes rotate {
-            from{
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        .collectionCard::after{
-            content: "";
-            position: absolute;
-            inset:5px;
-            background: #FFF5E1;
-            border-radius: 15px;
-            z-index: -10;
-        }
-        .btnline{
-            position: relative;
-            background-color: #FFF5E1;
-        }
-        .line{
-            position: absolute;
-            bottom: 10;
-            left: -60 ;
-            width: 300px;
-            height: 10px;
-            background-color: #800020;
-            z-index: -10;
-        }
-        .contactCard{
-            width: 300px;
-            height: 300px;
-            padding: 20px;
-            text-align: center;
-            padding-top: 90px; 
-        }
-        .contactCard:hover{
-            transform: translate(5px);
-        }
-        footer{
-            margin-top: 20px;
-            background-color: #800020;
-            color: #FFF5E1;
-            width: 100%;
-            /* height: 60vh; */
-        }
-        footer a{
-            text-decoration: none;
-            color: #FFF5E1;
-        }
-        .carouseltext{
-            font-size: 20px;
-        }
-        @media (max-width:767px) {
-            .offerImg{
-                width: 250px;
-                height: 350px;
-            }
-            .chooseCards, .collectionCards, .contact{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .foot{
-                display: flex;
-                flex-direction: column; 
-            }
-            .carouseltext{
-                font-size: 12px;
-            }
-        }
-       
-    </style>
+<link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <nav class="navbar navbar-expand-lg d-flex justify-content-between px-5 pt-3 rounded-2" >
             <div class="container">
                 <div class="d-flex align-items-center">
-                <a href="" class="navbar-brand"><img src="Images/riamlogo.jpg" alt="" width="40px" class="rounded-circle"> RIAM</a>
+                <a href="#home" class="navbar-brand"><img src="Images/riamlogo.jpg" alt="" width="40px" class="rounded-circle"> RIAM</a>
                 </div>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
                 <img src="icons/tdesign--menu-unfold.svg" alt="" width="30px">
@@ -162,16 +23,16 @@
                 <div class="collapse navbar-collapse" id="navbarLinks">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">About</a>
+                            <a href="#about" class="nav-link  px-3 fw-medium" style="color: #800020;">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Specialty</a>
+                            <a href="#specialty" class="nav-link  px-3 fw-medium" style="color: #800020;">Specialty</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Collections</a>
+                            <a href="#collections" class="nav-link  px-3 fw-medium" style="color: #800020;">Collections</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link  px-3 fw-medium" style="color: #800020;">Contact</a>
+                            <a href="#contact" class="nav-link  px-3 fw-medium" style="color: #800020;">Contact</a>
                         </li>
                     </ul>
                 </div> 
@@ -179,7 +40,7 @@
     </nav>
     
     <!-- hero section  -->
-   <section class="hero d-flex justify-content-center align-items-center ">
+   <section class="hero d-flex justify-content-center align-items-center " id="home">
     <div>
         <h1 class="heroh1">Riam Stitches & Fashion</h1>
     <p class="fs-2 text-center">Made to fit, made to shine</p>
@@ -187,39 +48,55 @@
     </div>
    </section>
 
+<!-- about  -->
+ <section id="about">
+    <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-3 py-lg-5">About</h1>
+    <section class="d-lg-flex justify-content-center gap-5 mx-auto aboutt">
+        <div class="aboutleft" >
+            <h3 style="color: #800020;  font-family: lora;" class="text-center">RIAM STITCHES & FASHION</h3>
+            <p style="color: #800020;  font-family: lora; font-size: 20px; text-align: justify;"> We are a fashion brand dedicated to creating stylish, well-crafted pieces that celebrate confidence and individuality. Inspired by modern trends and timeless design, our collections are thoughtfully made for people who value quality and elegance </p>
+        </div>
+        <div class="aboutright">
+            <img src="Images/temp_image_FFC9A0E3-4627-4FEA-A357-36BD7D8A6F33.webp" alt="" width="300px">
+            <span style="color: #800020;  font-family: lora; font-size: 20px; text-align: center" class="d-block">Salahu Bola Mariam</span>
+            <p style="color: #800020;  font-family: lora; font-size: 20px; text-align: center;"> <i>CEO Riam Stitches & Fashion</i></p>
+        </div>
 
+    </section>
+ </section>
 <!-- what we offer   -->
- <section class="offer">
+ <section class="offer" id="specialty">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Our Specialty</h1>
    <section class="d-flex gap-4 align-items-center ms-4"  style="overflow-x: auto; overflow-y: hidden; white-space: nowrap; scrollbar-width: none; -ms-overflow-style: none;">
     
     <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/Screenshot_20260106-104113_1.png" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Female wear</p>
     </div>
      <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/IMG-20251221-WA0115.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Corporate wear</p>
     </div>
      <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/IMG-20251221-WA0117.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Custom wear</p>
     </div>
      <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/temp_image_062333F3-613A-4802-8403-035480F95DD6.webp" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Aso Ebi</p>
+    </div>
+    
+     <div style="font-size: 14px; flex-shrink: 0;">
+        <img src="Images/Screenshot_20260106-105401_1.png" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Khimar & Inner caps</p>
     </div>
      <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/temp_image_762FC83A-3E10-4C3C-8A91-E7833A5B0376.webp" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Style Recreation</p>
     </div>
      <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
-    </div>
-     <div style="font-size: 14px; flex-shrink: 0;">
-        <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" class="offerImg">
-        <p style="color: #800020;" class="text-center p-2">Women's wear</p>
+        <img src="Images/b1294da26fb54e8bae1ee9ab4de4a78a.jpg" alt="" class="offerImg">
+        <p style="color: #800020;" class="text-center p-2">Fabrics sourcing</p>
     </div>
     
    </section>
@@ -248,39 +125,38 @@
   </section>
 
   <!-- collections  -->
-<section class="collection px-5">
+<section class="collection px-5" id="collections">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Our Collections</h1>
     <section class="d-md-flex gap-4 collectionCards">
         <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
-            <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="300px" height="300px" class="">
-            <h6 style="color: #800020; ">Bolanle set</h6>
-            <p style="color: #800020;">#12,000</p>
+            <img src="Images/Screenshot_20260106-103930_1.png" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Eniola Dress</h6>
+            <p style="color: #800020;">#18,000</p>
             <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
         </div>
        
         <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
-            <img src="Images/1a6a8e1038b3920b58f4c620daa154cc.jpg" alt="" width="300px" height="300px" class="">
-            <h6 style="color: #800020; ">Bolanle set</h6>
-            <p style="color: #800020;">#12,000</p>
+            <img src="Images/Screenshot_20260106-105336_1.png" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Liyah set</h6>
+            <p style="color: #800020;">#20,000</p>
             <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
         </div>
         <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
-            <img src="Images/8af22f9af05fa12af6fdbe171cb85d32.jpg" alt="" width="300px" height="300px" class="">
-            <h6 style="color: #800020; ">Bolanle set</h6>
-            <p style="color: #800020;">#12,000</p>
+            <img src="Images/Screenshot_20260106-103954_1.png" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">K Dress</h6>
+            <p style="color: #800020;">#30,000</p>
             <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
         </div>
         <div class="collectionCard d-flex align-items-center" style="flex-direction: column;">
-            <img src="Images/891d76a47168f39f7684f520dab3b68e.jpg" alt="" width="300px" height="300px" class="">
-            <h6 style="color: #800020; ">Bolanle set</h6>
+            <img src="Images/temp_image_762FC83A-3E10-4C3C-8A91-E7833A5B0376.webp" alt="" width="300px" height="300px" class="">
+            <h6 style="color: #800020; ">Mimi set</h6>
             <p style="color: #800020;">#12,000</p>
             <a href="" class="btn fw-medium mb-3" style="background-color: #800020; color: #FFF5E1; font-size: 12px;">BUY</a>
         </div>
     </section>
      <div class="d-flex  justify-content-center pt-5 ">
-        <a href="" class="btn fw-medium mb-3 btnline" style="border:1px solid #800020; color: #800020; font-size: 12px;">VIEW MORE COLLECTIONS
-            <div class="line "></div>
-        </a>
+        <a href="" class="btn fw-medium mb-3 btnline" style="border:1px solid #800020; color: #800020; font-size: 12px;">VIEW MORE FROM CATALOG
+            </a>
      </div>
   </section>
  <!-- what our customer says  -->
@@ -320,7 +196,7 @@
     </section>
    
   </section> -->
- <section class="customer px-5">
+ <!-- <section class="customer px-5">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">What Our Customers say</h1>
     <section class=" customerCards">
         <div id="carouselText" class="carousel slide carousel-fade w-75 mx-auto" data-bs-ride="carousel">
@@ -350,15 +226,15 @@
         </div>
     </div>
     </section>
- </section>
+ </section> -->
   <!-- Contact -->
-   <section class="px-5 my-4">
+   <section class="px-5 my-4" id="contact">
     <h1 style="color: #800020;  font-family: Momo Signature, cursive;" class="text-center py-5">Contact us</h1>
    <section class=" d-md-flex justify-content-center gap-4 contact">
      <div class="contactCard" style="background-color: #800020; color: #FFF5E1; border-radius: 50px 0px ;">
         <img src="icons/fluent--call-20-filled.svg" alt="" width="50px">
         <p>Call/Message Us </p>
-        <p>+234 906 698 2861</p>
+        <p>+234 703 133 5051</p>
         <p>Available 24/7</p>
      </div>
      <div class="contactCard" style="background-color: #FFF5E1; color: #800020;">
@@ -381,14 +257,14 @@
         <div class="d-flex align-items-center" style="flex-direction: column;">
         <img src="Images/riamlogo.jpg" alt="" class="rounded-circle" width="60px" >
         <h1>Riam Stitches & Fashion</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, delectus! lore</p>
+        <p>Made to fit, made to shine.Your number one plug for unique clothes</p>
     </div>
     <div class="d-flex gap-3" style="flex-direction: column;">
         <h3>Quick Links</h3>
-        <a href="">Home</a>
-        <a href="">Collections</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#collection">Collections</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
     <div>
         <h3>Connect With Us</h3>
